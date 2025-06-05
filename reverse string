@@ -1,0 +1,24 @@
+public class Rev{
+    public static void main (String args[]){
+    String name="sugan";
+    System.out.println(reverse(name));
+}
+
+public static String reverse(String in){
+StringBuilder a=new StringBuilder();
+char []chars =in.toCharArray();
+for(int i=chars.length-1;i >= 0;i--){
+    a.append(chars[i]);
+}
+return a.toString();
+}
+}
+----------------------
+//using revese method
+public class Rev{
+    public static void main(String args[]){
+        String a="name";
+        String reversed =new StringBuilder(a).reverse().toString();
+        System.out.println(reversed);
+    }
+}
