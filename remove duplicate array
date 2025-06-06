@@ -25,4 +25,4 @@ public class Dup{
     }
      System.out.println("after romoving duplicate values:"+newvalues);  
     }
-
+}
