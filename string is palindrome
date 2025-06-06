@@ -1,0 +1,17 @@
+public class Rev{
+    public static void main(String args[]){
+        String name="sugan";
+        if(isPalindrome(name)){
+            System.out.println("palindrome");
+        }else{
+            System.out.println("it is not a palindrome");
+        }
+    }
+        
+    
+        public static boolean isPalindrome(String str)
+        {
+            StringBuilder s=new StringBuilder(str).reverse();
+            return str.equals(s.toString());
+        }
+}
