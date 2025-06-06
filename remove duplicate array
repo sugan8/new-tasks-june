@@ -11,3 +11,18 @@ public class Duplicate{
        System.out.println("after removing duplicate values:"+newnames);
     }
 }
+--------------------------------------------------------------
+import java.util.Set;
+import java.util.HashSet;
+public class Dup{
+    public static void main(String args[]){
+        int[] values={1,2,2,3,3,4,5};
+        
+    Set <Integer> newvalues=new HashSet<Integer>();
+    
+    for (int n:values){
+        newvalues.add(n);
+    }
+     System.out.println("after romoving duplicate values:"+newvalues);  
+    }
+
