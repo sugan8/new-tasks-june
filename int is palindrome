@@ -1,0 +1,18 @@
+public class Palin{
+    public static void main(String args[]){
+        int a,b =0,ans;
+        int n=9344;
+        ans=n;
+        while(n>0){
+            a=n%10;
+            b=(b*10)+a;
+            n=n/10;
+        }
+        if(ans==b){
+            System.out.println("it is a palindrome");
+        }
+        else{
+             System.out.println("it is not a palindrome");
+        }
+    }
+}
