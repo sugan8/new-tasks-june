@@ -1,0 +1,16 @@
+// ArrayIndexOutOfBoundsExceptin sample code
+public class ArrayIndexExample {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30};
+        try {
+            System.out.println("accessing element:"+numbers[2]);
+        }catch(ArrayIndexOutOfBoundsException e){
+        System.out.println("the number not found in the array");
+        }
+        finally{
+            System.out.println("the finally code executed");
+        }
+    }
+}
+
+
