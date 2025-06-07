@@ -1,0 +1,17 @@
+public class Overloading{
+   void greet(){
+       System.out.println("hello");
+   }
+   void greet(String name,int age){
+        System.out.println("hello,"+name+",ageis "+age);
+   }
+    void greet(String name,int age, int rollno ){
+        System.out.println("hello,"+name+" age "+age+"rollno is"+rollno);
+   } 
+   public static void main(String args[]){
+       Overloading obj=new Overloading();
+       obj.greet();
+       obj.greet("sugan",32);
+       obj.greet("sugan",32,22);
+   }
+}
