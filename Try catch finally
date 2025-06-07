@@ -1,0 +1,14 @@
+//code for try catch finally
+public class Trycatch{
+    public static void main(String args[]){
+        int[] mynumbers={1,2,3};
+        try{
+            System.out.println("Accessing element:"+mynumbers[2]);
+        }catch(Exception e){
+            System.out.println("something went wrong");
+        }
+        finally{
+            System.out.println("this is the final code");
+        }
+    }
+}
