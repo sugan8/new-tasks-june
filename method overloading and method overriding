@@ -15,3 +15,23 @@ public class Overloading{
        obj.greet("sugan",32,22);
    }
 }
+---------------------------------------------------------------
+// method overriding
+class Animal {
+    void sound() {
+        System.out.println("Animal sound");
+    }
+}
+class Lion extends Animal{
+    @Override
+    void sound(){
+        System.out.println("lion roars");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+         Lion d = new Lion();
+        d.sound();  // Output: Dog barks
+    }
+}
