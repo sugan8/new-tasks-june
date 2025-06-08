@@ -1,0 +1,15 @@
+// remove space from a string without using inbuilt methods
+public class Removespace{
+    public static void main(String args[]){
+        String a="su g a n s";
+        String b=" ";
+        for (int i=0;i<a.length();i++)
+        {
+            if (a.charAt(i)!=' ')
+            {
+              b=b+a.charAt(i);
+            }
+        }
+        System.out.println(b);
+    }
+}
