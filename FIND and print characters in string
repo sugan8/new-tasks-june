@@ -1,0 +1,19 @@
+// write  code to find duplicate characters in a string
+public class Main{
+    public static void main(String args[]){
+        String a="suggan";
+        int []count=new int[256];
+        
+        for(char ch:a.toCharArray()){
+            count[ch]++;
+        }
+        System.out.println("the duplicate values are");
+        
+        for (int i=0;i<256;i++){
+            if(count [i]>1){
+           System.out.println((char) i + ": " + count[i] + " times");
+
+            }
+        }
+    }
+}
