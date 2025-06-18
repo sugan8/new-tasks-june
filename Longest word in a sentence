@@ -1,0 +1,14 @@
+public class Main{
+    public static void main(String args[]){
+        String sentence="he is a tester";
+        String[] words=sentence.split(" ");
+        String longestword="";
+        for (String word : words){
+            if(word.length()>longestword.length()){
+                longestword = word;
+            }
+        }
+        System.out.println("Longestword :"+ longestword);
+        System.out.println("length :"+ longestword.length());
+    }
+}
