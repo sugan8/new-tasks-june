@@ -1,0 +1,21 @@
+// write a code to reverse a integer
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[]){
+        Scanner scanner =new Scanner (System.in);
+        System.out.println("enter a integer:");
+        int number =scanner.nextInt();
+        int Reversed =reverseNumber(number);
+        System.out.println("reversed number: " + Reversed);
+
+    }
+    public static int reverseNumber (int num){
+        int reversed =0;
+        while(num!=0){
+        int a =num%10;
+            reversed=reversed*10+a;
+            num/=10;
+        }
+        return reversed;
+    }
+}
