@@ -1,0 +1,22 @@
+// count no of digits in a integer
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[]){
+        Scanner scanner =new Scanner(System.in);
+        System.out.println("Enter an interger:");
+        int number=scanner.nextInt();
+        int digitcounts = countDigits(Math.abs(number));
+        System.out.println("number of digits:"+digitcounts);
+    }
+    public static int countDigits(int num){
+        if(num==0){
+            return 1;
+        }
+        int count=0;
+        while(num>0){
+        num/=10;
+        count ++;
+    }
+return count;
+}
+}
