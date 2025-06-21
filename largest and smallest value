@@ -1,0 +1,28 @@
+public class maxfinder{
+    public static void main(String args[]){
+        int []numbers={1,2,3,44,5,67,90};
+        int largest=findLargest(numbers);
+        int smallest=findSmallest(numbers);
+        System.out.println("Largest number:"+largest);
+        System.out.println("Smallest number:"+smallest);
+    }
+    public static int findLargest(int[]a){
+        int max=a[0];
+        for(int num:a){
+            if(num>max){
+                max=num;
+            }
+        }
+        return max;
+    }
+    public static int findSmallest(int[]a){
+                int min=a[0];
+        for(int num:a){
+            if(num<min){
+                min=num;
+            }
+        }
+        return min;
+    }
+}
+  
