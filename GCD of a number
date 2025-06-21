@@ -1,0 +1,19 @@
+// write a code to find GCD
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[]){
+        Scanner scanner =new Scanner(System.in);
+        System.out.println("enter the first value:");
+        int a=scanner.nextInt();
+        System.out.println("enter the second value:");
+        int b=scanner.nextInt();
+        int gcd=1;
+        int min=Math.min(Math.abs(a),Math.abs(b));
+        for(int i=1;i<=min;i++){
+            if(a%i==0 && b%i==0){
+                gcd=i;
+            }
+        }
+        System.out.println("the gcd value is:"+gcd);
+    }
+}
